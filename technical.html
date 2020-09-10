@@ -1,0 +1,630 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="description" content="reB∆SE (&#34;Rebase&#34;) is a social capital system with adaptive easing and yield farming. Use the reB∆SE token in the DeFi ecosystem to f∆RM, stake and rebase daily.">
+    <meta name="keywords" content="digital asset, cryptoasset, cryptocurrency, quantitative easing, oracle, yield farming
+    decentralized finance, defi, DeFi, smart contract, smart contracts, dapp, erc20, ethereum, token, erc20 token, erc777
+    farming, rebase, rebasing, git, monetary base, m0, m1, m2, money supply, uniswap, geyser, ampleforth, bitcoin, wallet, staking, reB∆SE,
+    f∆RM, farming, dex, finance, decentralized exchange, cex, idex, evm, central banking, decentralized banking, bank the unbanked,
+    chainlink, layer 2, layer2, layer-2, greeks, options, sumerian, egyptian, ancient egyptian, judea, CBDC, cbdc, central bank digital currency, digital dollar,
+    bonding curve, bonding, curve, bonded, bonded curve, ancient greek, ancient sumerian, persia, protectorate, orollup, optomistic rollup, zkrollup,
+    transaction mining, ethereum wallet, argent, zapper">
+    <meta name="author" content="reBASE">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.rebase.capital">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="reB∆SE 🌱 digital asset to farm, stake, DeFi. Social Capital">
+    <meta property="og:description" content="reB∆SE (&#34;Rebase&#34;) is a social capital system with adaptive easing and yield farming. Use the reB∆SE token in the DeFi ecosystem to f∆RM, st∆KE and rebase daily.">
+    <meta property="og:image" content="https://www.rebase.capital/img/rebasefarm-cover.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:site" content="@rebasecapital" />
+    <meta property="twitter:url" content="https://www.rebase.capital">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="reB∆SE 🌱 digital asset to farm, stake, DeFi. Social Capital">
+    <meta name="twitter:description" content="reB∆SE (&#34;Rebase&#34;) is a social capital system with adaptive easing and yield farming. Use the reB∆SE token in the DeFi ecosystem to f∆RM, st∆KE and rebase daily.">
+    <meta name="twitter:image" content="https://www.rebase.capital/img/rebasefarm-cover.jpg">
+
+    <title>reB∆SE 🌱 digital asset to farm, stake, DeFi. Social Capital</title>
+    <!-- favicon CSS -->
+    <link rel="icon"  type="image/png"  href="favicon.png">
+    <!-- fonts -->
+    <link href="fonts/sfuidisplay.css" rel="stylesheet">
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<style>
+
+.rect {
+  fill: #0085c4;
+  stroke: #fff;
+}
+
+.blue {
+  color: #09A0E7;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #0085c4;
+  stroke: #fff;
+}
+
+p.logo > img {
+    width: 75px;
+    height: 75px;
+    margin: 2px;
+}
+
+
+.svg-content {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.paddbot {
+  padding-bottom: 50px;
+}
+.paddbomore {
+  padding-bottom: 200px;
+}
+
+.font {
+    font-family: "SFUI", sans-serif;
+    font-size: 16px;
+}
+
+.font2 {
+    font-family: "SFUI", sans-serif;
+    font-size: 20px;
+}
+
+
+
+.paddbtop {
+  padding-top: 50px;
+}
+
+.paddbotsmall {
+  padding-bottom: 20px;
+}
+
+
+@media (min-width: 0px){
+  .svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+
+  .svg-content {
+    width: 300px;
+    height: 208px;
+  }
+}
+
+@media (min-width: 768px){
+  .svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+
+  .svg-content {
+    width: 768px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1200px){
+  .svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+  .svg-content {
+    width: 768px;
+    height: 400px;
+  }
+}
+
+.row {
+    padding: 10px;
+}
+
+</style>
+
+<body class="theme-royal-blue" data-spy="scroll" data-target="#navbar-nav" data-animation="false" data-appearance="dark">
+
+    <!-- =========== Start of Loader ============ -->
+    <div class="preloader">
+        <div class="wrapper">
+            <div class="blobs">
+                <div class="blob-center"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+            </div>
+            <div>
+                <div class="loader-canvas canvas-left"></div>
+                <div class="loader-canvas canvas-right"></div>
+            </div>
+        </div>
+    </div>
+    <!-- =========== End of Loader ============ -->
+
+    <main class="main hidden">
+        <!-- =========== Start of Navigation (main menu) ============ -->
+        <header class="navbar navbar-sticky sticky-bg-color--dark navbar-expand-lg navbar-dark">
+            <div class="container-fluid position-relative">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-brand__regular" src="img/brand-logo-white.png" alt="brand-logo">
+                    <img class="navbar-brand__sticky" src="img/brand-logo-white.png" alt="sticky brand-logo">
+                </a>
+                <!--  End of brand logo -->
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- end of Nav toggler -->
+
+                <div class="navbar-inner ml-lg-auto">
+                    <!--  Nav close button inside off-canvas/ mobile menu -->
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- end of Nav Toggoler -->
+                    <nav>
+                      <ul class="navbar-nav" id="navbar-nav">
+                          <li class="nav-item">
+                              <a class="nav-link" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="technical.html">Technical Overview</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="tokenomics.html">Tokenomics</a>
+                          </li>
+                          <div class="mr-5 mr-lg-0 ml-lg-2">
+                              <a class="nav-link" href="assets/Rebase-Whitepaper.pdf" class="btn btn-size--sm  btn-hover--splash blue"><span class="blue font-w--500">White Paper</span></a>
+                          </div>
+                          <div class="mr-5 mr-lg-0 ml-lg-2">
+                                <a class="nav-link" href="https://app.uniswap.org/#/swap?inputCurrency=0x4208d8d500b1643dca98dd27ba6c0060bca311c5&outputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48" class="btn btn-size--sm  btn-hover--splash blue"><span class="blue btn__text font-w--500">Buy Rebase</span></a>
+			  </div>
+
+                      </ul>
+                        <!-- end of nav menu items -->
+                    </nav>
+                </div>
+
+            </div>
+            <!-- end of container -->
+        </header>
+        <!-- =========== End of Navigation (main menu)  ============ -->
+
+
+
+        <!-- =========== Start of Content Block Big ============ -->
+        <section class="section--dark bg-color--dark">
+            <div class="svg-shape--top w-100 z-index1">
+                <img src="img/layout/braces.svg" alt="wave" class="svg w-100 fill--white">
+            </div>
+            <!-- end of top braces svg shape -->
+
+            <div class=" bg-color--dark--2 space--top position-relative z-index2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-10 mx-auto text-center reveal">
+                            <h2 class="mb-3 font-size--40 font-w--500 paddbotsmall"><span class="white">Technical Overview</span></h2>
+                            <h2 class="mb-3 font-size--40 font-w--700"><span>reB<span class="blue">∆</span>SE</span> is Powered <br> by Sound Economics.</h2>
+                            <p class=" white mb-4 mb-lg-7 px-lg-6">reB∆SE mathematically adjusts the supply in response to changes in demand.</p>
+                        </div>
+                    </div>
+                    <!-- end of section title row -->
+                </div>
+            </div>
+            <!-- end of text content -->
+
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 col-lg-8 mx-auto">
+                        <article class="article-content">
+                            <div class="entry-content">
+
+                                <h3 class="paddtop paddbotsmall">Introduction</h3>
+                                <p class="paddbotsmall">Being built on sound economic principles and programmable, reB∆SE encourages an equilibrium with supply
+                    and demand, by having the ability to alter its supply. The process off altering its supply is called
+                    a "rebase" and this happens daily.</p>
+                    <p class="paddbotsmall">reB∆SE is developed by a decentralized team around the world, and is open to community members and developers like you. reB∆SE is built on top of the Ethereum blockchain and within the Decentralized Finance ecosystem. </p>
+
+                    <h3 class="paddbot">How the Daily Rebase Works</h3>
+                    <p class="paddbotsmall">The daily rebase effects how much of the asset that you own. A +25% rebase increases everyone's holdings by 25%, while a -5% rebase
+                decreases everyone's holdings by 5%. In an efficient market, the price of everyone's holdings automatically offsets any benefits from the quantity change. <u>The changing quantities cannot be construed as an expectation of profit.</u>
+                    </p>
+                    <p class="paddbotsmall">
+                        <code class="blue">While the daily rebasing helps the stablecoin become a stablecoin by reaching equilibrium, it functions as an <u>uncorrelated asset</u>, which is a coveted addition to the universe of assets.</code> Rebase is powered by oracles, which determine the supply changes at 2:30 UTC, daily.
+                    </p>
+                    <p class="paddbot">Although all owners of reB∆SE can be beneficiaries of a positive rebase, where the supply is increased proportionally for all owners, <i>some</i> owners of reB∆SE can be beneficiaries of a much larger amount of REBASE via the "Stimulus".
+                    </p>
+                    <h3 class="paddbot">Stimulus</h3>
+                    <p class="paddbotsmall">A second mini-rebase occurs daily which is made to stimulate behavior of different kinds of holders by granting them an always-positive rebase. Various models are being experimented with, follow our announcements for more details.</u>
+                    </p>
+                    <p class="paddbot"></u>
+                    </p>
+                    <h3 class="paddbot">f<span style="color: #14c400;">∆</span>RM & Liquidity Incentives</h3>
+                    <p class="paddbotsmall">
+                    Large supply increases can outpace demand, unless supply was constricted by other incentives after
+                    the adaptive easing, or rebase. Therefore, reB∆SE will also have an accompanying staking model
+                    allowing for "yield farming", simple called the f∆rm.
+                    </p>
+                    <p class="paddbotsmall">
+                      Owners of reB∆SE have an incentive to launch and add liquidity to Uniswap pools, and keeping their
+                      liquidity locked by deposit into the reB∆SE farm, which offers an additional way to increase your yield over a yield curve.
+                    The farm allows deposits from <i>all</i> of the asset's Uniswap liquidity pools.
+                    </p>
+                    <p class="paddbotsmall">
+                    Community liquidity paired with reB∆SE's novel farm create sustainable alignments with holders.
+                    </p>
+                    <p class="paddbotsmall">
+                      This project and economy generates a vibrant market of participants and seeds interest in the rebasing system.
+                    </p>
+                    </p>
+                </div>
+            </article>
+            </div>
+            </div>
+            </div>
+        </section>
+        <section class=" roadmap--v4 section--dark bg-color--dark">
+            <div class="background-holder background--top--left">
+                <img src="img/layout/diagonal-shape-4.png" alt="wave" class="background-image-holder">
+            </div>
+            <!-- end of top right shape -->
+            <div class="background-holder background--bottom--right">
+                <img src="img/layout/polygon-2.png" alt="wave" class="background-image-holder">
+            </div>
+            <!-- end of top right shape -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-6 mx-auto text-center">
+                        <div class="section-title mb-5 mb-lg-7 reveal">
+                            <h2 class="h3-font">Development Timeline
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of section title row -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="roadmap-items d-flex flex-wrap reveal">
+                            <div class="roadmap-item roadmap-item--past">
+                                <div class="timeline-info font-w--700 color--white mb-6 mb-lg-8">
+                                    <span class="h6-font d-block mb-1">July 2020</span>
+                                    <span class="h5-font d-block">White Paper Released</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <span class="timeline-line"></span>
+                                    <div class="content-body bg-white rounded--05 px-2 py-3 bg-white">
+                                        <p class="font-size--16 text-color--400">Organization comes out of stealth</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- end of single item -->
+
+                            <div class="roadmap-item roadmap-item--past">
+                                <div class="timeline-info font-w--700 color--white mb-6 mb-lg-8">
+                                    <span class="h6-font d-block mb-1">July 2020</span>
+                                    <span class="h5-font d-block">Initial site launched</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <span class="timeline-line"></span>
+                                    <div class="content-body bg-white rounded--05 px-2 py-3">
+                                        <p class="font-size--16 text-color--400">Landing page is launched with basic information and concept, communities are created
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="roadmap-item roadmap-item--past">
+                                <div class="timeline-info font-w--700 color--white mb-6 mb-lg-8">
+                                    <span class="h6-font d-block mb-1">August 2020</span>
+                                    <span class="h5-font d-block">Initial Token Generated</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <span class="timeline-line"></span>
+                                    <div class="content-body bg-white rounded--05 px-2 py-3">
+                                        <p class="font-size--16 text-color--400">The elastic supply token of the reB∆SE system is called REBASE. This is its ticker symbol</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="roadmap-item roadmap-item--past">
+                                <div class="timeline-info font-w--700 color--white mb-6 mb-lg-8">
+                                    <span class="h6-font d-block mb-1">September 2020</span>
+                                    <span class="h5-font d-block">Initial Token Distributed</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <span class="timeline-line"></span>
+                                    <div class="content-body bg-white rounded--05 px-2 py-3">
+                                        <p class="font-size--16 text-color--400">Token distributed to initial buyers and strategic supporters</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of single item -->
+                            <div class="roadmap-item roadmap-item--past">
+                                <div class="timeline-info font-w--700 color--white mb-6 mb-lg-8">
+                                    <span class="h6-font d-block mb-1">2020 Q4</span>
+                                    <span class="h5-font d-block">Rebasing enabled</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <span class="timeline-line "></span>
+                                    <div class="content-body bg-white rounded--05 px-2 py-3">
+                                        <p class="font-size--16 text-color--400">
+                    The token will be upgraded to the production version with the rebasing functionality, and this will
+                    be available to all owners of prior versions of the reB∆SE token, and coordinated with any
+                    community services that have begun trading in reB∆SE</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="roadmap-item roadmap-item--past">
+                                <div class="timeline-info font-w--700 color--white mb-6 mb-lg-8">
+                                    <span class="h6-font d-block mb-1">2020 Q4</span>
+                                    <span class="h5-font d-block">Stimulus enabled</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <span class="timeline-line "></span>
+                                    <div class="content-body bg-white rounded--05 px-2 py-3">
+                                        <p class="font-size--16 text-color--400">
+                                            Initial economic model of stimulus becomes available</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of single item -->
+                            <div class="roadmap-item roadmap-item--past">
+                                <div class="timeline-info font-w--700 color--white mb-6 mb-lg-8">
+                                    <span class="h6-font d-block mb-1">2020 Q4</span>
+                                    <span class="h5-font d-block">f∆rm Launch</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <span class="timeline-line"></span>
+                                    <div class="content-body bg-white rounded--05 px-2 py-3">
+                                        <p class="font-size--16 text-color--400">The f∆rm is launched to incentivize the first community liquidity pools on Uniswap and other
+                    composable DeFi applications
+                </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="roadmap-item roadmap-item--past">
+                                <div class="timeline-info font-w--700 color--white mb-6 mb-lg-8">
+                                    <span class="h6-font d-block mb-1">2021</span>
+                                    <span class="h5-font d-block">f∆RM upgrades</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <span class="timeline-line"></span>
+                                    <div class="content-body bg-white rounded--05 px-2 py-3">
+                                        <p class="font-size--16 text-color--400">Additional features of the f∆RM will be rolled out to encourage locking supply for longer periods of time and the community providing liquidity to the community
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="roadmap-item roadmap-item--past">
+                                <div class="timeline-info font-w--700 color--white mb-6 mb-lg-8">
+                                    <span class="h6-font d-block mb-1">2021</span>
+                                    <span class="h5-font d-block">DeFi upgrades</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <span class="timeline-line"></span>
+                                    <div class="content-body bg-white rounded--05 px-2 py-3">
+                                        <p class="font-size--16 text-color--400">Incorporate changes in the DeFi ecosystem into the reB∆SE ecosystem
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of single item -->
+                        </div>
+                        <!-- end of roadmap main area -->
+                    </div>
+                    <!-- end of roadmap main col -->
+                </div>
+                <!-- end of roadmap main row -->
+
+                <!-- end of row -->
+
+            </div>
+
+        </section>
+        <!-- =========== End of Content Block Big ============ -->
+        <section class="section--dark bg-color--dark paddbot">
+            <div class="space--top documents documents--v1" id="documents">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-10 col-md-8">
+                            <div class="text-center text-sm-left mb-5 mb-lg-7 reveal">
+                                <h2 class="h3-font font-w--600 mb-2">Links</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of section title row -->
+                    <div class="row paddbotmore">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card border--none align-items-center text-center pb-2 pt-5 reveal">
+                                <a href="assets/Rebase-Whitepaper.pdf">
+                                    <img src="img/brand-logo-white.png" alt="pdf">
+                                </a>
+                                <div class="card-body align-items-center pt-1">
+                                    <a href="assets/Rebase-Whitepaper.pdf">
+                                        <h3 class="card-title h6-font font-w--600 color--white mb-0">White Paper</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of sinlge card col -->
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="card border--none align-items-center text-center pb-2 pt-5 reveal">
+                                <a href="https://github.com/reBASEcapital">
+                                    <img src="img/brand-logo-white.png" alt="pdf">
+                                </a>
+                                <div class="card-body align-items-center pt-1">
+                                    <a href="https://github.com/reBASEcapital">
+                                        <h3 class="card-title h6-font font-w--600 color--white mb-0">Github</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="svg-container col-12 col-lg-6 mt-6 mt-lg-0 mb-3 mb-lg-0 pl-lg-7 pb-lg-3 pos-abs-lg-vertical-center pos-right hero__image">
+                            <br/>
+                            <br/>
+                            <svg width="480" height="305" viewBox="0 0 960 500" preserveAspectRatio="xMidYMid" class="svg-content">
+                                <defs>
+                                  <clipPath id="clip-upper">
+                                    <rect id="rect-clip-upper" width="960" height="305" x="-480" y="-305"></rect>
+                                  </clipPath>
+                                  <clipPath id="clip-lower">
+                                    <rect id="rect-clip-lower" width="960" height="195" x="-480" y="0"></rect>
+                                  </clipPath>
+                                </defs>
+                                <g clip-path="url(#clip-upper)" transform="translate(480,305)"></g>
+                                <g clip-path="url(#clip-lower)" transform="translate(480,305)"></g>
+                              </svg>
+                        </div>
+                        <!-- end of sinlge card col -->
+
+                        <!-- end of sinlge card col -->
+
+                        <!-- end of sinlge card col -->
+                    </div>
+                    <!-- end of document row -->
+                </div>
+                <!-- end of document container -->
+            </div>
+            <!-- end of FAQ Area -->
+
+        </section>
+
+
+        <!-- =========== Start of Newsletter & Footer ============ -->
+        <section class="space--top section--dark bg-color--dark">
+
+            <!-- end of newsletter area -->
+
+            <footer class="footer pt-10 bg-color--dark section--dark position-relative hidden jsElement" data-pull="-153">
+                <div class="pt-3 pt-lg-10 pb-6 pb-lg-10 border--bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-9 col-lg-4 mb-4 mb-xl-0">
+                                <div class="pr-xl-3">
+                                    <span class="mb-3">
+                                            <img src="img/brand-logo-white.png" alt="brand-logo">
+                                        </span>
+                                    <p>🌱 digital asset with elastic supply to farm, stake, DeFi.</p>
+                                </div>
+                            </div>
+                            <!-- end of col -->
+                            <div class="col-6 col-md-4 col-lg-4 col-xl-2 mb-2 mb-xl-0">
+                                <div class="widget widget-nav">
+                                    <span class="widget__title font-size--20 font-w--700 mb-1">Navigation</span>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="technical.html">Technical Overview</a></li>
+                                        <li><a href="tokenomics.html">Tokenomics</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end of widget col-->
+                            <div class="col-6 col-md-4 col-lg-4 col-xl-2 offset-xl-1 mb-2 mb-xl-0">
+                                <div class="widget widget-nav">
+                                    <span class="widget__title font-size--20 font-w--700 mb-1">Links</span>
+                                    <ul>
+                                        <li><a href="assets/Rebase-Whitepaper.pdf">White Paper</a></li>
+                                        <li><a href="https://github.com/reBASEcapital">Github</a></li>
+                                        <li><a href="https://medium.com/rebase-capital">Newsroom</a></li>
+                                        <li><a href="https://twitter.com/rebasecapital">Twitter</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end of widget col-->
+                            <div class="col-6 col-md-4 col-lg-4 col-xl-2 offset-xl-1 mb-2 mb-xl-0">
+                                <div class="widget widget-nav">
+                                    <span class="widget__title font-size--20 font-w--700 mb-1">Communities</span>
+                                    <ul>
+                                        <li><a href="https://t.me/rebaseofficial">Telegram Announcements</a></li>
+                                        <li><a href="https://t.me/rebasechat">Telegram Chat</a></li>
+                                        <li><a href="https://discord.gg/jBg5ZAz">Discord <img src="https://img.shields.io/discord/734242135523459103?logo=discord" alt="chat with reBASE on Discord"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- end of widget col-->
+                        </div>
+                    </div>
+                    <!-- end of main footer container-->
+                </div>
+                <!-- end of main footer -->
+                <div class="py-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                            </div>
+                        </div>
+                        <!-- end of mini footer row -->
+                    </div>
+                    <!-- end of mini footer container -->
+                </div>
+                <!-- end of mini footer -->
+            </footer>
+            <!-- End of Footer area -->
+        </section>
+        <!-- =========== End of of Newsletter & Footer ============ -->
+    </main>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+     <!-- Custom Theme JavaScript -->
+     <script src="js/grayscale.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+     <script src="js/spiraltriangle_config.js"></script>
+     <script src="js/algoslice_config.js"></script>
+
+</body>
+
+</html>

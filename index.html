@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name="description" content="reB∆SE (&#34;Rebase&#34;) is a social capital system with an elastic supply and yield farming. Use the reB∆SE token in the DeFi ecosystem to f∆RM, stake and rebase daily.">
+    <meta name="keywords" content="digital asset, cryptoasset, cryptocurrency, quantitative easing, oracle, yield farming
+    decentralized finance, defi, DeFi, smart contract, smart contracts, dapp, erc20, ethereum, token, erc20 token, erc777
+    farming, rebase, rebasing, git, monetary base, m0, m1, m2, money supply, uniswap, geyser, ampleforth, bitcoin, wallet, staking, reB∆SE,
+    f∆RM, farming, dex, finance, decentralized exchange, cex, idex, evm, central banking, decentralized banking, bank the unbanked,
+    chainlink, layer 2, layer2, layer-2, greeks, options, sumerian, egyptian, ancient egyptian, judea, CBDC, cbdc, central bank digital currency, digital dollar,
+    bonding curve, bonding, curve, bonded, bonded curve, ancient greek, ancient sumerian, persia, protectorate, orollup, optomistic rollup, zkrollup,
+    transaction mining, ethereum wallet, argent, zapper">
+    <meta name="author" content="reBASE">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.rebase.capital">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="reB∆SE 🌱 digital asset to farm, stake, DeFi. Social Capital">
+    <meta property="og:description" content="reB∆SE (&#34;Rebase&#34;) is a social capital system with an elastic supply and yield farming. Use the reB∆SE token in the DeFi ecosystem to f∆RM, st∆KE and rebase daily.">
+    <meta property="og:image" content="https://www.rebase.capital/img/rebasefarm-cover.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:site" content="@rebasecapital" />
+    <meta property="twitter:url" content="https://www.rebase.capital">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="reB∆SE 🌱 digital asset to farm, stake, DeFi. Social Capital">
+    <meta name="twitter:description" content="reB∆SE (&#34;Rebase&#34;) is a social capital system with an elastic supply and yield farming. Use the reB∆SE token in the DeFi ecosystem to f∆RM, st∆KE and rebase daily.">
+    <meta name="twitter:image" content="https://www.rebase.capital/img/rebasefarm-cover.jpg">
+
+    <title>reB∆SE 🌱 digital asset to farm, stake, DeFi. Social Capital</title>
+    <!-- favicon CSS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- fonts -->
+    <link href="fonts/sfuidisplay.css" rel="stylesheet">
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+
+</head>
+
+<style>
+
+.rect {
+  fill: #0085c4;
+  stroke: #fff;
+}
+
+.blue {
+  color: #09A0E7;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #0085c4;
+  stroke: #fff;
+}
+
+p.logo > img {
+    width: 75px;
+    height: 75px;
+    margin: 2px;
+}
+
+
+.svg-content {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin: auto;
+}
+
+@media (min-width: 0px){
+  .svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+
+  .svg-content {
+    width: 330px;
+    height: 208px;
+  }
+}
+
+@media (min-width: 768px){
+  .svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+
+  .svg-content {
+    width: 330px;
+    height: 400px;
+  }
+
+  .mobile{
+    width: 200px;
+  }
+}
+
+@media (min-width: 1200px){
+  .svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+  .svg-content {
+    width: 768px;
+    height: 400px;
+  }
+}
+
+.row {
+    padding: 10px;
+}
+
+</style>
+
+<body class="theme-royal-blue" data-spy="scroll" data-target="#navbar-nav" data-animation="false" data-appearance="dark">
+
+    <!-- =========== Start of Loader ============ -->
+    <div class="preloader">
+        <div class="wrapper">
+            <div class="blobs">
+                <div class="blob-center"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+            </div>
+            <div>
+                <div class="loader-canvas canvas-left"></div>
+                <div class="loader-canvas canvas-right"></div>
+            </div>
+        </div>
+    </div>
+    <!-- =========== End of Loader ============ -->
+
+    <main class="main hidden">
+        <!-- =========== Start of Navigation (main menu) ============ -->
+        <header class="navbar navbar-sticky sticky-bg-color--dark navbar-expand-lg navbar-dark">
+            <div class="container-fluid position-relative">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-brand__regular" src="img/brand-logo-white.png" alt="brand-logo">
+                    <img class="navbar-brand__sticky" src="img/brand-logo-white.png" alt="sticky brand-logo">
+                </a>
+                <!--  End of brand logo -->
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- end of Nav toggler -->
+
+                <div class="navbar-inner ml-lg-auto">
+                    <!--  Nav close button inside off-canvas/ mobile menu -->
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- end of Nav Toggoler -->
+                    <nav>
+                        <ul class="navbar-nav" id="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#how">How it works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="technical.html">Technical Overview</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tokenomics.html">Tokenomics</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="team.html">Team</a>
+                            </li>-->
+
+                            <div class="mr-5 mr-lg-0 ml-lg-2">
+                                <a class="nav-link"href="assets/Rebase-Whitepaper.pdf" class="btn btn-size--sm  btn-hover--splash blue"><span class="blue font-w--500">White Paper</span></a>
+                            </div>
+                            <div class="mr-5 mr-lg-0 ml-lg-2">
+                                <a class="nav-link" href="https://app.uniswap.org/#/swap?inputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&outputCurrency=0x4208d8d500b1643dca98dd27ba6c0060bca311c5" class="btn btn-size--sm  btn-hover--splash blue"><span class="blue btn__text font-w--500">Buy Rebase</span></a>
+                            </div>
+
+                        </ul>
+                        <!-- end of nav menu items -->
+                    </nav>
+                </div>
+
+            </div>
+            <!-- end of container -->
+        </header>
+        <!-- =========== End of Navigation (main menu)  ============ -->
+
+        <!-- =========== Start of Hero ============ -->
+        <section class="hero hero--full hero--v11 bg-color--dark--1 d-flex align-items-center ">
+
+            <!-- end of top right mini svg shape -->
+            <div class="container">
+                <div class="row flex-column-reverse flex-lg-row">
+                    <div class="col-12 col-md-10 col-lg-7 mx-auto mx-lg-0 text-center text-lg-left z-index2">
+                        <div class="hero-content reveal">
+                          <div class="cd-intro">
+                              <h1 class="white hero__title  font-w--700 mb-2 cd-headline letters scale mobile">
+                                <span class="cd-words-wrapper blue">
+                                    <b class="is-visible">f∆RM</b>
+                                    <b>st∆KE</b>
+                                    <b>DeFi</b>
+                                </span> <br>
+                              </h1>
+                          </div>
+                            <div class="cd-intro">
+                                <h1 class="white hero__title h2-font font-w--700 mb-2 cd-headline letters scale">
+
+                                    A Social Capital System with an elastic supply.
+
+                                </h1>
+                            </div>
+
+                            <p class="white hero__description text-color--700 opacity--70 font-size--20 mb-4 mb-lg-5 pr-xl-5"> reB∆SE is a programmable digital asset for yield farmers.</p>
+                            <!-- end of text content -->
+
+                            <div class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                                <a href="https://app.uniswap.org/#/swap?inputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&outputCurrency=0x4208d8d500b1643dca98dd27ba6c0060bca311c5" class=" blue btn btn-hover--3d btn-bg--primary btn-size--lg mr-2">
+                                    <span class="btn__text">Buy Now</span>
+                                </a>
+                                <a href="https://www.rebase.capital/assets/Rebase-Whitepaper.pdf" class="blue btn btn-hover--3d btn-bg--primary btn-size--lg mr-2">
+                                    <span class="btn__text">White Paper</span>
+                                </a>
+
+                            </div>
+                            <!-- end of button -->
+                        </div>
+                        <!-- end of content -->
+                    </div>
+                    <!-- end of col -->
+
+                    <div class="svg-container col-12 col-lg-6 mt-6 mt-lg-0 mb-3 mb-lg-0 pl-lg-7 pb-lg-3 pos-abs-lg-vertical-center pos-right hero__image">
+                        <br/>
+                        <br/>
+                        <svg width="480" height="305" viewBox="0 0 960 500" preserveAspectRatio="xMidYMid" class="svg-content">
+                            <defs>
+                              <clipPath id="clip-upper">
+                                <rect id="rect-clip-upper" width="960" height="305" x="-480" y="-305"></rect>
+                              </clipPath>
+                              <clipPath id="clip-lower">
+                                <rect id="rect-clip-lower" width="960" height="195" x="-480" y="0"></rect>
+                              </clipPath>
+                            </defs>
+                            <g clip-path="url(#clip-upper)" transform="translate(480,305)"></g>
+                            <g clip-path="url(#clip-lower)" transform="translate(480,305)"></g>
+                          </svg>
+                    </div>
+
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+            </div>
+        </section>
+        <!-- =========== End of Hero ============ -->
+
+        <!-- =========== Start of Core Feautes ============ -->
+        <section class="py-4 pb-lg-10 " id="how">
+            <div class="section-overlap bg-color--primary-light--1 pos-abs-top jsElement" data-height="360"></div>
+            <!-- end of section overlap bg -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-9 col-lg-6 mx-auto text-center reveal">
+                        <h2 class="mb-2 font-size--48 font-w--700">re·base <br> <p>/rēˈbās/</p></h2>
+                        <h2 class="mb-2 font-size--20 font-w--400">1.(verb) to establish a new base level for (a tax level, price index, etc.)</h2>
+
+                        <p></p>
+                    </div>
+                </div>
+                <!-- end of section title row -->
+            </div>
+        </section>
+        <section class="space--top pb-6 section--dark bg-color--dark--2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center text-lg-left mb-5 mb-lg-6 reveal">
+                            <h2 class="h3-font">Why is reB∆SE needed?</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of of title row -->
+                <div class="row pb-6">
+                    <div class="col-12 col-lg-6 reveal">
+                        <ul class="pl-2">
+                            <li class="blue mb-3 h5-font">
+                                <h3 class="h5-font font-w--600 mb-1">Centralized monetary policy is failing us</h3>
+                                <p class="h6-font">Traditional quantitative easing results in capital misallocations. reB∆SE's economic model addresses the failings of unilateral, arbitrary and politicized manipulation of the monetary base.</p>
+                            </li>
+                            <li class="blue mb-3 h5-font">
+                                <h3 class="h5-font font-w--600 mb-1">Misallocated assets</h3>
+                                <p class="h6-font">Misallocation of capital is exacerbated by arbitrary unlimited issuance of fiat currency which has outpaced liquidity of legacy asset classes.</p>
+                            </li>
+                            <li class="blue mb-3 h5-font">
+                                <h3 class="h5-font font-w--600">Digital assets are the future</h3>
+                                <p class="h6-font">Online globalization has led to the need for stable and economically sound digital assets.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end of problem list -->
+                    <div class="col-12 col-lg-6 reveal">
+                        <div class="bg-color--dark--1 border--around p-3 rounded--10">
+                            <h3 class="mb-2">The reB∆SE solution</h3>
+                            <p class="h6-font">reB∆SE is a social capital system with an elastic supply.   <br>   <br> Built on top of a secure decentralized ledger, reB∆SE is the basis for an accountable financial system.
+                                <br>
+                                <br> reB∆SE is a dynamic asset built upon sound economic principles that encourages equilibrium with supply and demand, by having the ability to alter its supply. The process of altering its supply is called a "rebase" and this happens daily.</p>
+                        </div>
+                    </div>
+                    <!-- end of solutions -->
+                </div>
+                <!-- end of row -->
+                <hr class="border--bottom">
+            </div>
+        </section>
+
+        <section class="section--dark bg-color--dark features features--v1 pt-10 pb-5 hidden" id="features">
+            <div class="canvas-lines opacity--10">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- end of canvas lines -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-5">
+                        <div class="section-title mb-5 mb-lg-7 text-center text-md-left reveal">
+                            <h2 class="h3-font">Learn more about <br>how reB∆SE  <br> works.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of section title row -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="masks">
+                            <div class="mask mask--top z-index2 jsElement bg-color--dark " data-height="50%"></div>
+                            <div class="mask mask--bottom z-index3 bg-color--dark jsElement" data-height="72.7%"></div>
+                            <div class="mask mask--full bg-color--dark jsElement" data-height="72.7%"></div>
+
+                            <!-- INSTRUCTION:
+                            //     This section is technically a complicated section due to limitation of the carousel slider. We created two divs to mask the left side where the first div contains the bg color of the previous/ overlapped section and the second and third one is light blue. If you use a different bg color on the previous/ overlapped section you need to add "data-bg-color="COLOR VALUE OF PREVIOUS SECTION BG COLOR" attribute to the first div. And gradient color might not work well.
+                            -->
+                        </div>
+                        <!-- end of mask -->
+
+                        <div class="carosuel-slider--v3 card--v3 z-index1">
+                            <div class="slide">
+                                <div class="card bg-color--primary rounded--05 box-shadow--6 px-3 pt-5 pb-3">
+                                    <div class="card-body paddbot">
+                                        <span class="font-size--60 mb-2 color--white">
+                                            <i class="icon icon-contacts"></i>
+                                        </span>
+                                        <h3 class="font-size--30 font-w--700 mb-2"><a href="technical.html" class="color--white">Technical <br> Overview</a></h3>
+
+                                        <p class="mb-3 font-size--20 opacity--80 ">Learn more about how reB∆SE is developed and the technical details behind its implementation.</p>
+                                    </div>
+
+                                    <div class="card-footer">
+                                        <a href="technical.html" class="font-size--26 color--white"><i class="icon icon-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of single slide -->
+                            <div class="slide active">
+                                <div class="card bg-color--primary rounded--05 box-shadow--6 px-3 pt-5 pb-3">
+                                    <div class="card-body">
+                                        <span class="font-size--60 mb-2 color--white">
+                                            <i class="icon icon-tool-blur"></i>
+                                        </span>
+                                        <h3 class="font-size--30 font-w--700 mb-2"><a href="tokenomics.html" class="color--white">Tokenomics</a></h3>
+
+                                        <p class="mb-3 font-size--20 opacity--80">View the distribution of tokens, lockup, & valuation information</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="tokenomics.html" class="font-size--26 color--white"><i class="icon icon-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of single slide -->
+                            <div class="slide">
+                                <div class="card bg-color--primary rounded--05 box-shadow--6 px-3 pt-5 pb-3">
+                                    <div class="card-body">
+                                        <span class="font-size--60 mb-2 color--white">
+                                            <i class="icon icon-folder-user"></i>
+                                        </span>
+                                        <h3 class="font-size--30 font-w--700 mb-2"><a href="team.html" class="color--white">White Paper</a></h3>
+
+                                        <p class="mb-3 font-size--20 opacity--80">Read in depth about what the reB∆SE project is based upon.</p>
+                                    </div>
+
+                                    <div class="card-footer">
+                                        <a href="assets/Rebase-Whitepaper.pdf" class="font-size--26 color--white"><i class="icon icon-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of single slide -->
+
+
+                            <!-- end of single slide -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Start of Social Buttons ============ -->
+        <section class="bg-color--primary-light--1 pt-6 pb-7 pb-lg-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-9 col-lg-6 mb-4 mb-lg-6 mx-auto text-center reveal">
+                        <h2 class="mb-2 font-size--40 font-w--700">Stay Connected</h2>
+                        <p>Keep in touch with the latest updates or reach out to us with any questions you have.</p>
+                    </div>
+                </div>
+                <!-- end of section title row -->
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                        <div class=" icon-fill--wide text-center d-lg-flex justify-content-lg-center flex-wrap reveal">
+                            <a class="t-icon box-shadow--5 rounded--05 m-1 btn-hover--primary" href="https://t.me/rebaseofficial">
+                                <span class="t-icon__brand-icon h4-font blue"><i class="fab fa-telegram-plane"></i></span>
+                                <span class="t-icon__brand-name h5-font font-w--500 text-color--700">Telegram</span>
+                            </a>
+                            <a class="t-icon box-shadow--5 rounded--05 m-1 btn-hover--primary" href="https://github.com/reBASEcapital">
+                                <span class="t-icon__brand-icon h4-font blue"><i class="fab fa-github"></i></span>
+                                <span class="t-icon__brand-name h5-font font-w--500 text-color--700">Github</span>
+                            </a>
+                            <a class="t-icon box-shadow--5 rounded--05 m-1 btn-hover--primary" href="https://discord.gg/jBg5ZAz">
+                                <span class="t-icon__brand-icon h4-font blue"><i class="fab fa-discord"></i></span>
+                                <span class="t-icon__brand-name h5-font font-w--500 text-color--700">Discord</span>
+                            </a>
+                            <a class="t-icon box-shadow--5 rounded--05 m-1 btn-hover--primary" href="mailto:relay@rebase.capital">
+                                <span class="t-icon__brand-icon h4-font blue"><i class="fas fa-envelope"></i></span>
+                                <span class="t-icon__brand-name h5-font font-w--500 text-color--700">Email</span>
+                            </a>
+
+                        </div>
+                        <!-- end of icon group -->
+                    </div>
+                    <!-- end of col -->
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </section>
+        <!-- =========== End of Social Buttons ============ -->
+
+        <section class=" section--dark bg-color--dark--2 team team--v1 mb-5 pt-5" id="developmentPartner" style="padding-bottom:8em;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-10 col-md-8 mx-auto reveal ">
+                        <div class="text-center  ">
+                            <h2 class="h3-font mb-2">Our Development Partners</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card p-5">
+                            <img src="img/allcode.png" alt="development partner" class="img-fluid" style="border-radius: 0px;">
+                            </br>Premier software engineering agency. Involved in implementing project requirements. Years of experience with decentralized applications and also enterprise.
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card p-5">
+                            <img src="img/acheron.png" alt="development partner" class="img-fluid" style="border-radius: 0px;">
+                            </br>Designated market maker. Has worked with leading crypto projects and maintains deep relationships with exchanges and their network.
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card p-5">
+                            <img src="img/ferrumnetwork.png" alt="development partner" class="img-fluid" style="border-radius: 0px;">
+                            </br>Ferrum operates a vibrant ecosystem for cross chain swaps and a non-custodial UniFyre Wallet, an ecosystem which the REBASE token inherits via collaboration and integration into the Unifyre wallet.
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card p-5">
+                            <img src="img/maximuscapital.png" alt="development partner" class="img-fluid" style="border-radius: 0px;">
+                            </br>Maximus Capital is a strategic partner in emerging technology ventures, such as in the decentralized finance (DeFi) sector. Its deep network is an asset to project growth.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Start of Newsletter & Footer ============ -->
+        <section class="space--top section--dark bg-color--dark">
+
+            <!-- end of newsletter area -->
+
+            <footer class="footer pt-10 bg-color--dark section--dark position-relative hidden jsElement" data-pull="-153">
+                <div class="pt-3 pt-lg-10 pb-6 pb-lg-10 border--bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-9 col-lg-4 mb-4 mb-xl-0">
+                                <div class="pr-xl-3">
+                                    <span class="mb-3">
+                                            <img src="img/brand-logo-white.png" alt="brand-logo">
+                                        </span>
+                                    <p>🌱 digital asset with elastic supply to farm, stake, DeFi.</p>
+                                </div>
+                            </div>
+                            <!-- end of col -->
+                            <div class="col-6 col-md-4 col-lg-4 col-xl-2 mb-2 mb-xl-0">
+                                <div class="widget widget-nav">
+                                    <span class="widget__title font-size--20 font-w--700 mb-1">Navigation</span>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="technical.html">Technical Overview</a></li>
+                                        <li><a href="tokenomics.html">Tokenomics</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end of widget col-->
+                            <div class="col-6 col-md-4 col-lg-4 col-xl-2 offset-xl-1 mb-2 mb-xl-0">
+                                <div class="widget widget-nav">
+                                    <span class="widget__title font-size--20 font-w--700 mb-1">Links</span>
+                                    <ul>
+                                        <li><a href="assets/Rebase-Whitepaper.pdf">White Paper</a></li>
+                                        <li><a href="https://github.com/reBASEcapital">Github</a></li>
+                                        <li><a href="https://medium.com/rebase-capital">Newsroom</a></li>
+                                        <li><a href="https://twitter.com/rebasecapital">Twitter</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end of widget col-->
+                            <div class="col-6 col-md-4 col-lg-4 col-xl-2 offset-xl-1 mb-2 mb-xl-0">
+                                <div class="widget widget-nav">
+                                    <span class="widget__title font-size--20 font-w--700 mb-1">Communities</span>
+                                    <ul>
+                                        <li><a href="https://t.me/rebaseofficial">Telegram Announcements</a></li>
+                                        <li><a href="https://t.me/rebasechat">Telegram Chat</a></li>
+                                        <li><a href="https://discord.gg/jBg5ZAz">Discord <img src="https://img.shields.io/discord/734242135523459103?logo=discord" alt="chat with reBASE on Discord"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- end of widget col-->
+                        </div>
+                    </div>
+                    <!-- end of main footer container-->
+                </div>
+                <!-- end of main footer -->
+                <div class="py-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                            </div>
+                        </div>
+                        <!-- end of mini footer row -->
+                    </div>
+                    <!-- end of mini footer container -->
+                </div>
+                <!-- end of mini footer -->
+            </footer>
+            <!-- End of Footer area -->
+        </section>
+        <!-- =========== End of of Newsletter & Footer ============ -->
+    </main>
+    <script src="js/plugins.min.js"></script>
+    
+    <script src="js/app.js"></script>
+     <!-- jQuery -->
+     <script src="js/jquery.js"></script>
+
+     <!-- Bootstrap Core JavaScript -->
+     <script src="js/bootstrap.min.js"></script>
+ 
+     <!-- Plugin JavaScript -->
+     <script src="js/jquery.easing.min.js"></script>
+ 
+     <!-- Custom Theme JavaScript -->
+     <script src="js/grayscale.js"></script>
+ 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+ 
+     <script src="js/spiraltriangle_config.js"></script>
+     <script src="js/algoslice_config.js"></script>
+    
+</body>
+
+</html>
